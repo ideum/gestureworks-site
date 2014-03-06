@@ -4,3 +4,4 @@ gems:
   - jekyll-assets
   - jekyll-assets/bourbon
   - jekyll-assets/neat
+exclude: Gemfile, Gemfile.lock

@@ -12,32 +12,23 @@
 </head>
 <body>
 
-<div class="site">
   <header id="header">
-    <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-    <a class="extra" href="/">home</a>
+    <div class="content">
+      {% include header.html %}
+    </div>
   </header>
 
   <section id="main">
-    {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
   </section>
 
   <footer id="footer">
-    <div class="contact">
-      <p>
-      Your Name<br />
-      What You Are<br />
-      you@example.com
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-      <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-      <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-      </p>
+    <div class="content">
+      {% include footer.html %}
     </div>
   </footer>
-</div>
 
 </body>
 </html>
