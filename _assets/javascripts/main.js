@@ -1,4 +1,4 @@
-//= require vendor/jquery
+//= require jquery
 
 jQuery(function ($) {
   $('[data-subnav-label]').on('click', function (event) {

@@ -1,7 +1,17 @@
 name: Gestueworks
 markdown: redcarpet
-gems:
-  - jekyll-assets
-  - jekyll-assets/bourbon
-  - jekyll-assets/neat
-exclude: Gemfile, Gemfile.lock
+
+# Don't include Gemfile in compiled site
+exclude: [Gemfile, Gemfile.lock]
+
+assets:
+  cache: true
+  cachebust: soft
+
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+    - _vendor/javascripts
+    - _vendor/stylesheets
+    - _vendor/images
