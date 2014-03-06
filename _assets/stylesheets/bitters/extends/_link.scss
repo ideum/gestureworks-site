@@ -1,0 +1,4 @@
+@mixin undecorated-link($color: $base-font-color) {
+  color: $color;
+  text-decoration: none;
+}
