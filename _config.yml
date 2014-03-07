@@ -1,8 +1,8 @@
 name: Gestueworks
 markdown: redcarpet
 
-# Don't include Gemfile in compiled site
-exclude: [Gemfile, Gemfile.lock]
+# Don't include README or Gemfile in compiled site
+exclude: [README.md, Gemfile, Gemfile.lock]
 
 assets:
   cache: true
