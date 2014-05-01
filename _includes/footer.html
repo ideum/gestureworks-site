@@ -1,28 +1,29 @@
 <div class="row">
   <nav class="footer-menu">
     <ul>
-      <li><a href="/">Home</a></li>
+      {% navlink / %}Home{% endnavlink %}
       <li>
         <span>Products</span>
-        <ul class="subnav">
-          <li><a href="#FIXME">GestureWorks Core</a></li>
-          <li><a href="#FIXME">Open Exhibits</a></li>
-          <li><a href="#FIXME">GestureWorks Gameplay</a></li>
+        <ul>
+          {% navlink /core/ %}GestureWorks Core{% endnavlink %}
+          <li><a href="http://openexhibits.org/" target="_blank">Open Exhibits</a></li>
+          <li><a href="https://gameplay.gestureworks.com/" target="_blank">GestureWorks Gameplay</a></li>
         </ul>
       </li>
-      <li><a href="#FIXME">Blog</a></li>
+      <li><a href="http://gestureworks-hci.tumblr.com/" target="_blank">Blog</a></li>
     </ul>
     <ul>
-      <li><a href="#FIXME">Icons + Fonts</a></li>
-      <li><a href="#FIXME">Creative Services</a></li>
-      <li><a href="#FIXME">Tutorials</a></li>
-      <li><a href="#FIXME">About</a></li>
-      <li><a href="#FIXME">Contact</a></li>
+      {% navlink /icons-fonts/ %}Icons + Fonts{% endnavlink %}
+      {% navlink /creative-services/ %}Creative Services{% endnavlink %}
+      <li><a href="http://wiki.gestureworks.com/" target="_blank">Wiki</a></li>
+      {% navlink /about/ %}About{% endnavlink %}
+      {% navlink /contact/ %}Contact{% endnavlink %}
+      {% navlink /legal/ %}Legal{% endnavlink %}
     </ul>
   </nav>
 
   <section class="copyright">
-    <h1>Ideum</h1>
-    <p>&copy; 2014 Ideum.  GestureWorks is a product of Ideum.  Patent Pending.</p>
+    <h1><a href="http://ideum.com">Ideum</a></h1>
+    <p>&copy; 2014 Ideum. GestureWorks is a product of <a href="http://ideum.com">Ideum</a>. Patent&nbsp;Pending.</p>
   </section>
 </div>
