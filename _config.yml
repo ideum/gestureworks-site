@@ -1,4 +1,5 @@
 name: Gestueworks
+url: http://gestureworks.com
 markdown: redcarpet
 
 # Don't include README or Gemfile in compiled site
