@@ -18,23 +18,23 @@
 
 @import "site_structure";
 
-.button {
-  @extend %button
-}
+// .button {
+//   @extend %button
+// }
 
-.hero-unit {
-  @include row;
-  @include pad;
-}
+// .hero-unit {
+//   @include row;
+//   @include pad;
+// }
 
-.bottom-links {
-  @include row(table)
-}
+// .bottom-links {
+//   @include row(table)
+// }
 
-.bottom-link {
-  @include span-columns(4);
-  @include pad;
-  border-right: 1px solid white;
-  &:last-child { border-right: none }
-  background-color: #DDD;
-}
+// .bottom-link {
+//   @include span-columns(4);
+//   @include pad;
+//   border-right: 1px solid white;
+//   &:last-child { border-right: none }
+//   background-color: #DDD;
+// }

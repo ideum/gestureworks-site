@@ -1,20 +1,39 @@
 #footer
-  .row
-    +row(table)
+  background: $dark-gray
+  color: $white
+  +clearfix
+  +row
+
+  a
+    color: $white
+    &:hover
+      color: darken($white, 20%)
 
   .footer-menu
-    +span-columns(6)
-    +pad
+    +clearfix
+    line-height: 2
+    margin-bottom: 2em
     & > ul
-      float: left
+      +span-columns(6)
       +pad
       ul
         margin-left: 1em
-    a
-      // +undecorated-link(white)
 
   .copyright
-    +span-columns(6)
+    +span-columns(12)
     +pad
     text-align: right
-    vertical-align: bottom
+    h1 a
+      display: inline-block
+      +hide-text
+      +size(104px 40px)
+      background: asset-url("ideum-masthead.png")
+
+  +media($large-screen-up)
+    .footer-menu
+      +span-columns(6)
+      margin-bottom: 0
+      & > ul
+        +span-columns(3 of 6)
+    .copyright
+      +span-columns(6)
