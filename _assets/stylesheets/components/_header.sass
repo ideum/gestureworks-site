@@ -1,0 +1,70 @@
+#header
+  background: $white
+  overflow: hidden
+
+  .logo
+    margin: 6px 0
+    a
+      display: block
+      +hide-text
+      +size(259px 51px)
+      background: asset-url("header-logo.png")
+
+  nav
+    ul
+      border: 1px solid $white
+      border-top-width: 0
+      border-left-width: 0
+    li
+      background: $light-gray
+      border: 1px solid $white
+      border-bottom-width: 0
+      border-right-width: 0
+      text-transform: uppercase
+    a, span
+      display: block
+      +fill-parent
+      padding: em(8)
+      color: $medium-gray
+      cursor: pointer
+    [data-subnav-label]:after
+      content: "▼"
+      margin-left: 0.25em
+
+    ul.subnav
+      +clearfix
+      display: none
+      border: 1px solid $medium-gray
+      border-top-width: 0
+      border-left-width: 0
+      &.open
+        display: block
+      li
+        background: $white
+        border: 1px solid $medium-gray
+        border-bottom-width: 0
+        border-right-width: 0
+        a
+          padding: em(3)
+
+        @each $product in core, gameplay, flash, gesturekey
+          &.#{$product} a:before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            +size(45px 45px)
+            background: asset-url("logos/#{$product}.png")
+            margin-right: em(12)
+
+  +media($medium-screen-up)
+    nav > ul 
+      &> li
+        display: block
+        float: left
+        width: 50%
+        &:last-child
+          width: 100%
+    .subnav > li
+      display: block
+      float: left
+      width: 50%

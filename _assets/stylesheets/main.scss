@@ -10,16 +10,13 @@
 
 @import "extends/base";
 @import "mixins/base";
+@import "components/base";
 @import "typography";
 @import "forms";
 @import "tables";
 @import "lists";
 
 @import "site_structure";
-
-#header { @import "header" }
-
-#footer { @import "footer" }
 
 .button {
   @extend %button

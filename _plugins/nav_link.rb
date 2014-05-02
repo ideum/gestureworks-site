@@ -2,16 +2,17 @@ module Jekyll
   class NavLink < Liquid::Block
     def initialize(tag_name, url, tokens)
       super
-      @url = url.strip
+      @classes = url.strip.split /\s+/
+      @url = @classes.shift
     end
 
     def render(context)
       link = %{<a href="#{@url}">#{super}</a>}
+      classes = @classes.clone
       if current_page_active(context)
-        %{<li class="active">#{link}</li>}
-      else
-        %{<li>#{link}</li>}
+        classes << 'active'
       end
+      %{<li class="#{classes.join(' ')}">#{link}</li>}
     end
 
     private

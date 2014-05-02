@@ -1,0 +1,20 @@
+#footer
+  .row
+    +row(table)
+
+  .footer-menu
+    +span-columns(6)
+    +pad
+    & > ul
+      float: left
+      +pad
+      ul
+        margin-left: 1em
+    a
+      // +undecorated-link(white)
+
+  .copyright
+    +span-columns(6)
+    +pad
+    text-align: right
+    vertical-align: bottom

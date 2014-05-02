@@ -1,18 +1,19 @@
-<h1><a class="logo" href="/">Gestureworks</a></h1>
+<h1 class="logo"><a href="/">Gestureworks</a></h1>
 
 <nav>
   <ul>
+    {% navlink /about/ %}About{% endnavlink %}
+    <li><a href="http://wiki.gestureworks.com/" target="_blank">Wiki</a></li>
+    {% navlink /creative-services/ %}Creative Services{% endnavlink %}
+    <li><a href="http://gestureworks-hci.tumblr.com/" target="_blank">Blog</a></li>
     <li>
       <span data-subnav-label>Products</span>
       <ul class="subnav">
-        {% navlink /core/ %}GestureWorks Core{% endnavlink %}
-        <li><a href="http://openexhibits.org/" target="_blank">Open Exhibits</a></li>
-        <li><a href="https://gameplay.gestureworks.com/" target="_blank">GestureWorks Gameplay</a></li>
+        {% navlink /core/ core %}GestureWorks Core{% endnavlink %}
+        <li class="gameplay"><a href="https://gameplay.gestureworks.com/" target="_blank">GestureWorks Gameplay</a></li>
+        {% navlink /flash/ flash %}GestureWorks Flash{% endnavlink %}
+        {% navlink /gesturekey/ gesturekey %}GestureKey{% endnavlink %}
       </ul>
     </li>
-    <li><a href="http://gestureworks-hci.tumblr.com/" target="_blank">Blog</a></li>
-    {% navlink /creative-services/ %}Creative Services{% endnavlink %}
-    <li><a href="http://wiki.gestureworks.com/" target="_blank">Wiki</a></li>
-    {% navlink /about/ %}About{% endnavlink %}
   </ul>
 </nav>
