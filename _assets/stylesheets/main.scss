@@ -2,14 +2,18 @@
 
 @import "bourbon";
 
+@import "neat-helpers";
+@import "grid-settings";
 @import "variables";
+
+@import "neat";
+
 @import "extends/base";
+@import "mixins/base";
 @import "typography";
 @import "forms";
 @import "tables";
 @import "lists";
-
-@import "neat";
 
 @import "site_structure";
 
